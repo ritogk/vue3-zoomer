@@ -1,5 +1,7 @@
 <template>
   <div class="twp vz-zoomimg-container relative">
+    <p>sample-code</p>
+    <p>sample-code</p>
     <DragZoomImg
       v-if="isDrag"
       v-model:current-scale="currentScale"
