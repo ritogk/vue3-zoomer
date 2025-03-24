@@ -1,7 +1,5 @@
 <template>
-  <p>sample-code</p>
-  <p>sample-code</p>
-  <div style="width: 800px">
+  <div class="centered-container">
     <ZoomImg
       class="h-[30rem]"
       :src="red"
@@ -11,15 +9,21 @@
       :show-zoom-btns="false"
     />
   </div>
-  <br />
-  <div style="width: 800px">
-    <Magnifier :src="red" zoom-type="move" :zoom-scale="3" />
-  </div>
 </template>
 
 <script setup lang="ts">
 import red from "./assets/images/red.jpg";
 import "./assets/css/main.css";
 import ZoomImg from "./components/ZoomImg.vue";
-import Magnifier from "./components/Magnifier.vue";
 </script>
+
+<style scoped>
+.centered-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+</style>
